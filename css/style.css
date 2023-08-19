@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    border: 1px #eaeaea solid;
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.wrapper {
+    margin-top: 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2 {
+    margin-top: 0px;
+}
+
+.form_title {
+    padding: 5px 0;
+    margin: 0;
+}
+
+form {
+    padding: 10px;
+    text-align: center;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+.btn {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btn {
+	display: inline-block;	
+	box-sizing: border-box;
+	padding: 0 20px;
+	margin: 0 15px 15px 0;
+	outline: none;
+	border: none;  
+	border-radius: 6px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 17px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #385898;
+	background-color: #e7f3ff;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;
+}
+.btn:focus-visible {
+	box-shadow: 0 0 0 2px #666;
+}
+.btn:hover {
+	background-color: #DBE7F2;
+}
+.btn:active {
+	transform: scale(0.96);
+}
+.btn:disabled {
+	pointer-events: none;
+	opacity: 0.65;
+}
+
+
+.table {
+	width: 100%;
+	margin-bottom: 20px;
+	border: 5px solid #fff;
+	border-top: 5px solid #fff;
+	border-bottom: 3px solid #fff;
+	border-collapse: collapse; 
+	outline: 3px solid #ffd300;
+	font-size: 15px;
+	background: #fff!important;
+}
+.table th {
+	font-weight: bold;
+	padding: 7px;
+	background: #ffd300;
+	border: none;
+	text-align: left;
+	font-size: 15px;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #ffd300;
+    border-right: 1px solid #000000;
+}
+.table td {
+	padding: 7px;
+    text-align: center;
+	border: none;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+    border-right: 1px solid #000000;
+	font-size: 15px;
+}
+.table tbody tr:nth-child(even){
+	background: #f8f8f8!important;
+}
+.table {
+    display: none;
+}
+#reset {
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 20px;
+    }
+    input, select {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="Reinvestment Calculator" />
+    <meta property="og:description" content="Reinvestment" />
+    <meta
+      property="og:image:alt"
+      content="Likwel changes lives for the better, invest with a reliable company"
+    />
+    <meta property="og:image:width" content="564" />
+    <meta property="og:image:height" content="375" />
+    <title>Reinvestment Calculator - Exclusive Deal</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <img src="img/logo.png" alt="">
+      <h2>LIKWEL</h1>
+      <form id="main_form" action="#">
+        <div class="form_container">
+          <div class="block block-num">
+            <p class="form_title">Deposit <br/>
+              min $1,000 - max $50,000</p> 
+            <input type="text" id="count" value="1000" max="50000" />
+          </div>
+          <div class="block block-num mb-20">
+            <p class="form_title">Days to reinvest</p>
+            <input disabled type="number" max="30" id="count-day" value="30" />
+          </div>
+          <div style="display: none;" id="tetd" class="block block-num mb-20">
+            <p class="form_title">Total amount</p>
+            <input disabled type="number" id="count-total" value="0" />
+          </div>
+          <div class="block block-btn">
+            <input id="input-calc"
+              class="btn btn"
+              type="submit"
+              value="Calculate reinvest"
+            />
+            <button id="reset"
+              class="btn button19 btn"
+              type="submit">Reset</button>
+          </div>
+        </div>
+      </form>
+
+      <div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Percent</th>
+              <th>Profit</th>
+              <th>Profit with reinvest</th>
+            </tr>
+          </thead>
+          <tbody id="popka">
+            <!-- <tr>
+              <td>1</td>
+              <td>0.8<span>%</span></td>
+              <td>8<span>$</span></td>
+              <td>1008<span>$</span></td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
